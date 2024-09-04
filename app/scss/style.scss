@@ -3,6 +3,9 @@
 @import 'vars';
 @import 'peremen';
 @import 'fonts';
+@import 'header';
+@import 'footer';
+@import 'rem';
 
 *{
   -webkit-tap-highlight-color: transparent;
@@ -12,5 +15,6 @@
   max-width: 1253px;
     padding: 0 15px;
     margin: 0 auto;
+  
 }
 

@@ -6,15 +6,17 @@
 @import 'header';
 @import 'footer';
 @import 'rem';
+@import 'top';
 
 *{
   -webkit-tap-highlight-color: transparent;
 }
 .container{
-    
+  padding: auto;
   max-width: 1253px;
     padding: 0 15px;
     margin: 0 auto;
-  
+    
 }
+
 

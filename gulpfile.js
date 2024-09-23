@@ -5,7 +5,7 @@ const uglify = require('gulp-uglify-es').default;
 const browserSync = require('browser-sync').create()
 //const autoprefixer = require( "gulp-autoprefixer")
 const clean = require('gulp-clean')
-//const avif = require('gulp-avif')
+const avif = require('gulp-avif')
 const webp = require('gulp-webp')
 const imagemin = require('gulp-imagemin')
 const newer = require('gulp-newer')
@@ -13,7 +13,7 @@ const newer = require('gulp-newer')
 const fonter = require('gulp-fonter')
 const ttf2woff2 = require('gulp-ttf2woff2')
 const include = require('gulp-include');
-const svgSprite = require("gulp-svg-sprite")
+//const svgSprite = require("gulp-svg-sprite")
 //const autoprefixer = require('gulp-autoprefixer')
 
 /*
@@ -52,10 +52,10 @@ function fonts (){
 
 function images(){
     return src(['app/images/src/*.*', '!app/images/src/*.svg'])
-    //.pipe(newer('app/images'))
-    //.pipe(avif({ quality : 60}))
+    .pipe(newer('app/images'))
+    .pipe(avif({ quality : 60}))
 
-    //.pipe(src('app/images/src/*.*'))
+    .pipe(src('app/images/src/*.*'))
     .pipe(newer('app/images'))
     .pipe(webp())
    
@@ -67,7 +67,7 @@ function images(){
     .pipe(dest('app/images'))
     
 }
-
+/*
 function sprite(){
 return src('app/images/dist/*.svg')
 .pipe(svgSprite({
@@ -83,7 +83,7 @@ mode:{
 }
 
 
-
+*/
 function scripts (){
     return src(
        // 'node_modules/swiper/swiper-bundle.js',
@@ -129,9 +129,8 @@ function watching (){
 function building(){
     return src([
         'app/css/style.min.css',
-        'app/images/dist/*.*',
+        'app/images/*.*',
         'app/images/*.svg',
-        //'app/images/stack',
         'app/fonts/*.*',
         'app/js/main.min.js',
         'app/**/*.html'
@@ -160,7 +159,7 @@ exports.styles = styles
 exports.images = images
 exports.fonts = fonts
 
-exports.sprite = sprite
+//exports.sprite = sprite
 exports.scripts = scripts
 exports.watching = watching
 exports.pages = pages

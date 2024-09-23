@@ -1,0 +1,27 @@
+
+
+.footer{
+    @include main;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__content{
+        max-width: 570px;
+        margin: 0 auto;
+
+    }
+    &__title{
+        font-family: $next;
+        font-weight: 400;
+        font-size: 16px;
+        color: $colbel;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer{
+        &__title{
+            text-align: center;
+        }
+    }
+    
+}

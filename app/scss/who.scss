@@ -1,0 +1,396 @@
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.who{
+    @include main;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    &__title__subtitle-button{
+        max-width: 440px;
+    }
+    
+    &__images__content-button{
+        background-color: rgba(255, 255, 255, 0.8);
+        max-width: 580px;
+        min-height: 440px;
+        border-radius: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 33px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 46px;
+    }
+    
+    &__img-button img{
+-o-object-fit: cover;
+   object-fit: cover;
+    }
+    &__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 120px;
+    }
+    &__title{
+        &::after{
+            content: '';
+            background-color: #FDBFA3;
+            position: absolute;
+            width: 380px;
+            height: 4px;
+            display: block;
+            top: 55px;
+            left: 0px;
+            -webkit-transform: scale(0, 0);
+                -ms-transform: scale(0, 0);
+                    transform: scale(0, 0);
+            -webkit-transform-origin: left;
+                -ms-transform-origin: left;
+                    transform-origin: left;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            
+           }
+       margin-bottom: 30px;
+       text-align: start;
+       margin-left: 0;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+        font-family: $next;
+        font-weight: 400;
+        font-size: 16px;
+        color: $colbel;
+        line-height: 1.4;
+    }
+    &__subtitle2{
+        margin-bottom: 55px;
+    }
+    &__button {
+       
+        max-width: 180px;
+       } 
+
+       &__img-title{
+        font-family: $mont;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:  #6D31D0;
+        padding-top: 24px;
+        margin-bottom: 15px;
+       }
+
+       &__img-subtitle{
+        font-family: $next;
+        font-weight: 400;
+        font-size: 16px;
+        color: #434364;
+        margin-bottom: 15px;
+       }
+       &__button2{
+        max-width: 147px;
+       }
+  
+}
+
+@media (max-width: 1200px) {
+   .who{
+    &__content{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        gap: 44px;
+    }
+   
+   } 
+}
+
+@media (max-width: 768px){
+.who{
+  &__img-button img{
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    display: block;
+   
+  }  
+  &__button{
+    margin-left: 0px;
+}
+&__button2{
+    margin-left: 0px;
+}
+}
+}
+
+@media (max-width: 730px){
+    .who{
+        &__images__content-button{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+        &__img-button img{
+            width: 100%;
+            height: auto;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: right;
+               object-position: right;
+            display: block;
+          
+           
+          }  
+          &__img-title{
+            text-align: center;
+        }
+        &__img-subtitle{
+            text-align: center;
+        }
+        &__button2{
+            margin: 0 auto;
+        }
+        &__button{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .who{
+       
+        &__button2{
+            display: block;
+            max-width: 180px;
+        }
+        &__button{
+            display: block;
+        }
+        &__button-link2{
+            max-width: 147px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .who{
+        &__images__content-button{
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+        &__img-title{
+            text-align: center;
+        }
+        &__button{
+            margin: 0 auto;
+        }
+    }
+}
+
+/*
+
+.who{
+    @include main;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    &__title__subtitle-button{
+        max-width: 440px;
+    }
+    
+    &__images__content-button{
+        background-color: rgba(255, 255, 255, 0.8);
+        max-width: 580px;
+        min-height: 440px;
+        border-radius: 20px;
+        display: flex;
+        gap: 33px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 46px;
+    }
+    
+    &__img-button img{
+object-fit: cover;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 120px;
+    }
+    &__title{
+        &::after{
+            content: '';
+            background-color: #FDBFA3;
+            position: absolute;
+            width: 380px;
+            height: 4px;
+            display: block;
+            top: 55px;
+            left: 0px;
+            transform: scale(0, 0);
+            transform-origin: left;
+            transition: all 0.3s;
+            
+           }
+       margin-bottom: 30px;
+       text-align: start;
+       margin-left: 0;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+        font-family: $next;
+        font-weight: 400;
+        font-size: 16px;
+        color: $colbel;
+        line-height: 1.4;
+    }
+    &__subtitle2{
+        margin-bottom: 55px;
+    }
+    &__button {
+       
+        max-width: 180px;
+       } 
+
+       &__img-title{
+        font-family: $mont;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color:  #6D31D0;
+        padding-top: 24px;
+        margin-bottom: 15px;
+       }
+
+       &__img-subtitle{
+        font-family: $next;
+        font-weight: 400;
+        font-size: 16px;
+        color: #434364;
+        margin-bottom: 15px;
+       }
+       &__button2{
+        max-width: 147px;
+       }
+  
+}
+
+@media (max-width: 1200px) {
+   .who{
+    &__content{
+        flex-wrap: wrap;
+        gap: 44px;
+    }
+   
+   } 
+}
+
+@media (max-width: 768px){
+.who{
+  &__img-button img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: right;
+    display: block;
+   
+  }  
+  &__button{
+    margin-left: 0px;
+}
+&__button2{
+    margin-left: 0px;
+}
+}
+}
+
+@media (max-width: 730px){
+    .who{
+        &__images__content-button{
+            flex-direction: column;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+        &__img-button img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: right;
+            display: block;
+          
+           
+          }  
+          &__img-title{
+            text-align: center;
+        }
+        &__img-subtitle{
+            text-align: center;
+        }
+        &__button2{
+            margin: 0 auto;
+        }
+        &__button{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .who{
+       
+        &__button2{
+            display: block;
+            max-width: 180px;
+        }
+        &__button{
+            display: block;
+        }
+        &__button-link2{
+            max-width: 147px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .who{
+        &__images__content-button{
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+        &__img-title{
+            text-align: center;
+        }
+        &__button{
+            margin: 0 auto;
+        }
+    }
+}

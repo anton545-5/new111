@@ -1,0 +1,135 @@
+
+
+
+.part{
+    gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__title{
+        font-family: $next;
+        font-weight: 700;
+        font-size: 36px;
+        color: #434364;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 1180px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    &__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .part{
+        &__content{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -ms-flex-wrap:wrap;
+                flex-wrap:wrap;
+
+           
+        }
+        &__img6{
+            margin-top: 60px;
+        }
+
+        &__img5{
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+  .part{
+    &__img4{
+        margin-top: 60px;
+    }
+
+    &__img3{
+        margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+    .part{
+        &__img2{
+            margin-top: 60px;
+        }
+    }
+}
+
+/*
+
+.part{
+    gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__title{
+        font-family: $next;
+        font-weight: 700;
+        font-size: 36px;
+        color: #434364;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 1180px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .part{
+        &__content{
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+
+           
+        }
+        &__img6{
+            margin-top: 60px;
+        }
+
+        &__img5{
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+  .part{
+    &__img4{
+        margin-top: 60px;
+    }
+
+    &__img3{
+        margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+    .part{
+        &__img2{
+            margin-top: 60px;
+        }
+    }
+}

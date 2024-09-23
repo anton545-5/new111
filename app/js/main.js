@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+
   let list1 = document.querySelector('.header__list-link1')
   let list2 = document.querySelector('.header__list-link2')
   let headerbur = document.querySelector('.header__burger')
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
   
  
-})
+
 
 
 

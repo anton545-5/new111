@@ -133,6 +133,7 @@ function building(){
         'app/images/*.svg',
         'app/fonts/*.*',
         'app/js/main.min.js',
+        'app/js/inputmask.min.js',
         'app/**/*.html'
     ], {base : 'app'})
     .pipe(dest('dist'))
